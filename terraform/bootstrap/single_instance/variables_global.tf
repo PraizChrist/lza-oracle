@@ -9,7 +9,7 @@ variable "location" {
 
 variable "resourcegroup_name" {
   description = "If defined, the name of the resource group into which the resources will be deployed"
-  default     = ""
+  default     = "test"
 }
 
 variable "resourcegroup_tags" {
@@ -70,7 +70,8 @@ LOCK
 #  Virtual Machine parameters                                                           #
 #########################################################################################
 variable "ssh_key" {
-  description = "value of the ssh public key to be used for the virtual machines"
+  description = "ssh_key"
+  default     =  "sh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCZ/KXKM5ZVSV3G2+jklYn7xMLZj4SGjtsMTe1a4vcGYuz91B6X6Q3icHt4scqm0mlJiiSkR+C6dXQ+g+BDx/HnsE1s84iSAqqCcs9RCHIGrKCjH6MOeTTB9zvDkgXE61r0Ljml+6LbLeyCX6GRW4CUgj6GQ2vfgc5kXm7Up+EcJJjd+K4dRMHCVEV4Zt4082/UY08p4PzG2jCFDCGMj27IlH+Gvjptz6lxDf5Zdm8OYApWwhHIb4YpHmiFY0z8Tnlp2/PK6d+loOJxZ+Uu+sMX4WwuVk8xRUXMWRCyv72CMY5ZF8uCwWM7DlflM3RYhF9nQLiYi7oaez7i3YXjEtmrsOWBh9LYPWqPfrrznfiI2PAP+ywuSzhiQfobRZMeOwJDaQIDYGScykF+P9TGKxcR7UIZKVlsM154IXgVXVpQgbVwOlh29PUdWHYzN6I6uftYADbV7EJvkbh8gH17kvdI6BZP5lsMO+dJuafvLZl9zj2QzM9WrsFpRRYFQ9EJFraBK0YCMrA4CFtwIptmAXNcnqmsTAtldOF01x6gDrrBfc3e6hFZze9Fb3XY8Q76Xe7OeWb2Mi2ceBuGD2drvUDsOuLoKGbaZZrZuWtAijAzewyyVs3oUCuK/tco3PQ7bBtdPzRFNuCmlUoHqZ/1lZOPYk0t89cofx8sSqGxApzf8Q="
 }
 
 variable "vm_sku" {
@@ -100,7 +101,7 @@ variable "vm_os_disk" {
 }
 
 variable "vm_user_assigned_identity_id" {
-  description = "The ID of the user assigned identity to be used for the virtual machine"
+  description = "3c95d2c9-661f-4449-83c2-22c4d27d7027"
 }
 
 variable "vm_extensions" {
