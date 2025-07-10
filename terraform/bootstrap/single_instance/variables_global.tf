@@ -9,7 +9,7 @@ variable "location" {
 
 variable "resourcegroup_name" {
   description = "If defined, the name of the resource group into which the resources will be deployed"
-  default     = "test"
+  default     = "testlab"
 }
 
 variable "resourcegroup_tags" {
